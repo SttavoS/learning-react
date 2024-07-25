@@ -1,15 +1,10 @@
+import useFetch from "../hooks/useFetch";
+
 const Home = () => {
-  // const [produto, setProduto] = useState(null);
+  const { request } = useFetch();
 
   const fetchProduct = async (slug) => {
-    const response = await fetch(`https://ranekapi.origamid.dev/json/api/produto/${slug}`);
-    const json = await response.json();
-
-    if (json?.data?.status == 400) {
-      return <p>Produto não encontrado...</p>;
-    }
-
-    // setProduto(json);
+    request(`https://ranekapi.origamid.dev/json/api/produto/${slug}`);
   }
 
   return <>
