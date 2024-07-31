@@ -1,0 +1,39 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.question-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.question-box legend {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.next-btn {
+  background-color: orange;
+  color: #101010;
+  border: 0;
+  padding: 10px 12px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.erro {
+  color: red;
+}
+
+.sucesso {
+  color: green;
+}
